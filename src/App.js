@@ -20,6 +20,7 @@ export default function App() {
     fetchShow()
     .then(res=> {
       //set state with the data
+      //random comment
       setShow(res.data);
       setSeasons(formatSeasons(res.data_embedded.episodes));
     });
